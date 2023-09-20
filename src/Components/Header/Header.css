@@ -3,9 +3,14 @@
   align-items: center;
   text-align: center;
   color: blueviolet;
+  font-size: 30px;
+  gap: 15px;
+  border: 2px solid greenyellow;
 }
 
-.header nav {
-  text-align: center;
-  color: chartreuse;
+nav a {
+  color: aqua;
+  margin-left: 15px;
+  font-size: 20px;
+
 }

@@ -1,19 +1,18 @@
+import { Link } from 'react-router-dom';
 import './User.css'
 
 const User = ({ user }) => {
   const { id, name, email, phone } = user;
-  const userStyle = {
-    border: '2px solid. red',
-    padding: '10px',
-    borderRadious: '15px'
-  }
+
 
   return (
-    <div className="userStyle" >
+    <div  >
       <h4> ID: {id} </h4>
       <h2>Name: {name} </h2>
       <p> Email: {email} </p>
       <p> Contact: {phone} </p>
+      <Link to={`/user/:${id}`} >Show  Details</Link>
+      <Link to={`/user/${id}`}><button>Click Me</button> </Link>
     </div>
   );
 };
